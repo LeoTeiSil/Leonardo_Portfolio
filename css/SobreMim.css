@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+    color: #00ff00;
+    width: 100%;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    background-color: #141414;
+    font-size: xx-large;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul.left {
+    margin-right: auto;
+}
+
+.navbar ul.direita {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); 
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #4caf50;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.foto-perfil {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 8px solid #4caf50;
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+.texto-sobre {
+    flex: 1;
+    font-size: xx-large;
+}
+
+.texto-sobre h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.texto-sobre h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.texto-sobre p {
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        font-size: x-large;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .foto-perfil {
+        width: 300px;
+        height: 300px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto-sobre {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar li {
+        margin-left: 10px;
+    }
+
+    .texto-sobre {
+        font-size: large;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        font-size: large;
+    }
+
+    .navbar li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+
+    .texto-sobre h2 {
+        font-size: large;
+    }
+
+    .texto-sobre h3 {
+        font-size: medium;
+    }
+
+    .texto-sobre p {
+        font-size: small;
+    }
+
+    .foto-perfil {
+        width: 250px;
+        height: 250px;
+    }
+}

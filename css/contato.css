@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    background-color: #141414;
+    font-size: xx-large;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul.left {
+    margin-right: auto;
+}
+
+.navbar ul.direita {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.container {
+    text-align: center;
+}
+
+.titulo {
+    background-color: #fff;
+    color: #32CD32;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 5px solid #32CD32;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha-formulario {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.linha-formulario div {
+    flex: 1;
+    margin: 0 50px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #28a745;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+    color: #00ff00;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .linha-formulario {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .linha-formulario div {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: large;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

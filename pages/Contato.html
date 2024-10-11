@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-me</title>
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="left">
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+    
+            <ul class="direita">
+                <li><a href="../pages/Home.html">Home</a></li>
+                <li><a href="../pages/SobreMim.html">Sobre Mim</a></li>
+                <li><a href="../pages/Skills.html">Skills</a></li>
+                <li><a href="../pages/Projetos.html">Projetos</a></li>
+                <li><a href="../pages/Certificados.html">Certificados</a></li>
+                <li><a href="../pages/Contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="titulo">Contate-me:</div>
+        <div class="formulario-container">
+            <div class="linha-formulario">
+                <div>
+                    <label for="primeiro-nome">Primeiro nome:</label>
+                    <input type="text" id="primeiro-nome" required>
+                </div>
+                <div>
+                    <label for="ultimo-nome">Último nome:</label>
+                    <input type="text" id="ultimo-nome" required>
+                </div>
+            </div>
+            <div class="linha-formulario">
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+            <div class="linha-formulario">
+                <div style="flex: 1;">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea id="mensagem" rows="5" required></textarea>
+                </div>
+            </div>
+            <button id="botaoEnviar">Enviar</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 - Leonardo. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/contato.js"></script>
+</body>
+</html>

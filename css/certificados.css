@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #141414;
+    font-size: xx-large;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul.esquerda {
+    margin-right: auto;
+}
+
+.navbar ul.direita {
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos {
+    text-align: center;
+}
+
+.projetos h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #00ff00;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+    color: #00ff00;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: large;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projetos h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        font-size: large;
+    }
+
+    .projetos h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+}

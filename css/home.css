@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+button:hover {
+    background-color: #28a745;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between; 
@@ -203,11 +207,9 @@ footer {
         font-size: 1rem;
     }
 
-    .imagem img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        border-radius: 50%;
+    .foto-perfil {
+        width: 250px;
+        height: 250px;
     }
 
     .download-btn {

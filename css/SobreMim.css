@@ -29,6 +29,11 @@ footer {
 
 }
 
+
+button:hover {
+    background-color: #28a745;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between; 

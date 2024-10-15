@@ -48,6 +48,10 @@ body {
     font-weight: bold;
 }
 
+button:hover {
+    background-color: #28a745;
+}
+
 main {
     display: flex;
     flex-direction: column;

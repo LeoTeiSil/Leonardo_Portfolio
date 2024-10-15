@@ -107,6 +107,10 @@ main {
     font-weight: bold;
 }
 
+button:hover {
+    background-color: #28a745;
+}
+
 footer {
     background-color: #141414;
     padding: 20px;
